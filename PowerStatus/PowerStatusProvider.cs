@@ -105,7 +105,7 @@ public sealed class PowerStatusProvider
                     var powerSetting = powerBroadcast->PowerSetting;
                     if (!powerHandlers.TryGetValue(powerSetting, out var list))
                         return PInvoke.DefWindowProc(hWnd, msg, wParam, lParam);
-                    var data = powerBroadcast->Data.AsReadOnlySpan();
+                    var data = new ReadOnlySpan<byte>(powerBroadcast->Data.Value, (int)powerBroadcast->DataLength);
                     foreach (var notification in list)
                     {
                         try

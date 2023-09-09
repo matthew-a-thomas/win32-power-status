@@ -56,6 +56,7 @@ Press any key to stop listening to events...
 The battery proportion is 0.47
 Battery saver is not on
 The lid is open
+The power scheme is Automatic
 The power source is DC
 The primary monitor is on
 The current monitor's display state is On
