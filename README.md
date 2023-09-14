@@ -1,5 +1,8 @@
 # PowerStatus
 
+[![Build and test](https://github.com/matthew-a-thomas/win32-power-status/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/matthew-a-thomas/win32-power-status/actions/workflows/build-and-test.yml)
+![Nuget](https://img.shields.io/nuget/v/PowerStatus)
+
 C# wrapper for win32's [System Power Status](https://learn.microsoft.com/en-us/windows/win32/power/system-power-status)
 
 ## Examples
