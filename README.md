@@ -15,7 +15,7 @@ var status = statusProvider.GetStatus();
 Console.WriteLine($"{status}");
 ```
 
-```
+```text
 PowerStatus { AcLineStatus = Offline, BatteryFlags = 0, BatteryLifeProportion = 0.47, BatterySaver = False, BatteryTime = 01:53:54, FullTime =  }
 ```
 
@@ -54,7 +54,7 @@ using (statusProvider.Subscribe(
 }
 ```
 
-```
+```text
 Press any key to stop listening to events...
 The battery proportion is 0.47
 Battery saver is not on
