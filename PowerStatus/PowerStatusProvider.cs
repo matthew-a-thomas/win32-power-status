@@ -99,7 +99,7 @@ public sealed class PowerStatusProvider
                 // received by the message queue for the window itself.
                 using var windowClass = new TransientClass((hWnd, msg, wParam, lParam) =>
                 {
-                    if (msg != PInvoke.WM_POWERBROADCAST || wParam != PInvoke.PBT_POWERSETTINGCHANGE)
+                    if (msg != PInvoke.WM_POWERBROADCAST || wParam.Value != PInvoke.PBT_POWERSETTINGCHANGE)
                         return PInvoke.DefWindowProc(hWnd, msg, wParam, lParam);
                     var powerBroadcast = (POWERBROADCAST_SETTING*)lParam.Value;
                     var powerSetting = powerBroadcast->PowerSetting;
