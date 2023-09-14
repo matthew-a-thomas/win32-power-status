@@ -13,6 +13,7 @@
         <RepositoryType>git</RepositoryType>
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <PackageTags>windows battery battery-life power</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
